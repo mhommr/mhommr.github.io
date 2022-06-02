@@ -3,7 +3,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fc9160;
+    color: #fc8c76;
 }
 
 h3 {
@@ -18,7 +18,7 @@ h3 {
 div {
     margin: 2%;
     padding: 2%;
-    border: #000;
+    border: #fc8c76;
     border-style: solid;
 }
 
@@ -47,19 +47,51 @@ h4 {
 
 #Nav a {
     text-decoration: none;
-    color: #ed7d49;
+    color: #fc8c76;
 }
 
 #Nav li:hover {
-    background-color: #ed7d49;
+    background-color: #fc8c76;
     color: #ffffff;
 }
 
 #Nav a:hover {
-    background-color: #ed7d49;
+    background-color: #fc8c76;
     color: #ffffff;
 }
 
+#Panel {
+    display: none;
+    align-items: center;
+}
+
+#Panel2 {
+    display: none;
+}
+
+#Panel3 {
+    display: none;
+}
+
+#Panel4 {
+    display: none;
+}
+
+#Panel5 {
+    display: none;
+}
+
+#Panel6 {
+    display: none;
+}
+
+#Panel7 {
+    display: none;
+}
+
+.Panels {
+    display: none;
+}
 
 #Summary img {
     display: inline;
@@ -92,9 +124,20 @@ h4 {
 
 .container {
     display: flex;
+    align-items: center;
 }
 
 p a {
     text-decoration: none;
-    color: #ed7d49;
+    color: #fc8c76;
+}
+
+#Analyze div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Analyze img {
+    width: 45%;
 }

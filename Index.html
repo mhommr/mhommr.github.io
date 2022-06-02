@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Bellbeat Analysis</title>
         <link rel="stylesheet" href="Bellabeat_style.css">
+        <script src="BellabeatJS.js"></script>
     </head>
     <body>
         <div>
@@ -11,7 +12,10 @@
                 <img src="download.png" alt="Bellabeat Logo" width="25%"><h1>Case Study</h1>
             </header>
             <h3>by Michael Hommrich</h3>
-            <a id="subtitle"><p>*This is a case study on the health and wellness company, Bellabeat. It is completed as a capstone project, finishing the Google Career Certification in Data Analytics.*</p></a>
+            <a id="subtitle"><p>*This is a case study on the health and wellness company, Bellabeat. It is completed as a capstone project, finishing the Google Career Certification in Data Analytics.*</p>
+            <p>I am trying out a new JavaScript function, click on each heading to get an expanded view of each section and double click to hide!</p>
+            <p>(The cursor will not change to click, but I promise it works! :)</p></a>
+
         </div>
         <div>
             <h2>Table of Contents</h2>
@@ -26,72 +30,91 @@
             </ul>
         </div>
         <div>
-            <a id="Summary"><h2>Summary</h2>
-            <img src="download.png" alt="Bellabeat Logo">
-            <p class="paragraph">Bellabeat is a small tech company that focuses on 'smart' health products for women. The company is trying to grow into a larger manufacturer. To do this, cofounders Urška Sršen (Chief Creative Officer) and Sando Mur have asked its marketing analytics team to analyze smart health product users in order to grow their company and ensure the most effective marketing strategy.</p>
-            <p>Because this is my first case study, I will be using spreadsheets, SQL, and R programming language. This is very much overkill, but I want to practice newer skills and display my understanding of the softwares.</p></a>         
+            <a id="Summary" onclick="myfunction()" ondblclick="myfunc()"><h2>Summary</h2>
+            <div id="Panel">
+                <img src="download.png" alt="Bellabeat Logo">
+                <p class="paragraph">Bellabeat is a small tech company that focuses on 'smart' health products for women. The company is trying to grow into a larger manufacturer. To do this, cofounders Urška Sršen (Chief Creative Officer) and Sando Mur have asked its marketing analytics team to analyze smart health product users in order to grow their company and ensure the most effective marketing strategy.</p>
+                <p>Because this is my first case study, I will be using spreadsheets, SQL, and R programming language. This is very much overkill, but I want to practice newer skills and display my understanding of the softwares.</p></a>   
+            </div>    
         </div>   
         <div>
-            <a id="Ask"><h2>Ask</h2></a>
-            <h4>Business task:</h4>
-            <p>Using the selected data, analyze health product data to understand the client to better improve products. Along with this, analyze any possible marketing opportunities.</p>
-            <h4>Other questions considered:</h4>
-            <ul>
-                <li>What makes for a happy/satisified user?</li>
-                <li>What is considered healthy?</li>
-                <li>How many hours of activity should the average woman get a day?</li>
-                <li>How many hours of sleep should the average woman get?</li>
-            </ul>
-        </div>
-        <div>
-            <a id="Prepare">
-                <h2>Prepare</h2>
-                <p class="p1">*For this case study, Sršen has suggested that we use the ‘FitBit Fitness Tracker Data’ available through Kaggle.*</p>
-                <h4>Data Integrity:</h4>
-                <p>This dataset was posted by user Möbius, who is competitions master and is a trusted user. Kaggle has also rated this dataset a 10 for usability, and this information is all public domain.</p>
-                <p>‘FitBit Fitness Tracker Data’ is a dataset containing health information for 30 users over a 30 day period. It includes information about calories burned, sleep hours, weight loss, etc. While it provides great information for the subject we are looking for, it is a very small sample size. However according to the Central Limit Theorem, 30 as a minimum is acceptable to represent the larger population. Bellabeat is specifically marketed for women, and this data does not specify gender or age, nor is there any information about water intake. So it is a more general sample of health tech users.</p>
-            </a>
-        </div>
-        <div>
-            <a id="Process"><h2>Process</h2></a>
-            <h4>General ChangeLog</h4>
-            <p>This was cleaned in Google Sheets</p>
-            <p>I've attached a more detailed ChangeLog <a link href="Cleaning.html">here</a></p>
-            <h4>Spreadsheet Cleaning</h4>
-            <ol>
-                <li>Datasets being used and aggregated: "dailyActivity_merged.csv", "sleepDay_merged.csv", "hourlySteps_merged.csv", "hourlyIntensities_merged.csv", and "hourlyCalories_merged.csv".</li>
-                <li>Used filters and sorting to omit and negligible columns.</li>
-                <li>*Had issues aggregating Daily Activity info because it had two search keys, the id and the date.</li>
-                <li>All three hourly files were aggregated into one "hourly" file.</li>
-            </ol>
-            <h4>SQL Cleaning</h4>
-            <div class="container">
-                <ol>
-                    <li>Uploaded sepearte daily datasets, "dailyActiviy_merged" and "sleepDay_merged"</li>
-                    <li>Using joins, aggregated those two data sets into one "daily" dataset</li>
-                    <li>Uploaded already combined "hourly" dataset</li>
-                </ol>
-                2.<img src="DailyJoin.png" alt="Screenshot of SQL Query">
+            <a id="Ask" onclick="myfunction2()" ondblclick="myfunc2()"><h2>Ask</h2></a>
+            <div id="Panel2">
+                <h4>Business task:</h4>
+                <p>Using the selected data, analyze health product data to understand the client to better improve products. Along with this, analyze any possible marketing opportunities.</p>
+                <h4>Other questions considered:</h4>
+                <ul>
+                    <li>What makes for a happy/satisified user?</li>
+                    <li>What is considered healthy?</li>
+                    <li>How many hours of activity should the average woman get a day?</li>
+                    <li>How many hours of sleep should the average woman get?</li>
+                </ul>
             </div>
         </div>
-        <div id="Analyze">
-            <h2>Analyze</h2>
-            <h4>What Makes a Healthy/Happy User?</h4>
-            <p>After some research, the statistics deemed ideal for adult women are:</p>
-            <ul>
-                <li>Recommended to get between 7-9 hours of sleep a night</li>
-                <li>Recommended to get around 10,000 steps a day</li>
-                <li>Recommended to burn around 2,000 calories a day</li>
-            </ul>
-            <p>To begin my analysis I began using SQL. I ran some basic queries. I discovered that of the 24 users that logged sleep data and 30 days, there are 413 unique days logged. Of those days, there were 270 occurances of a user beating the calorie goal and 167 occurances of a user beating their step goal. Based on the data that I have, I'm going to use R for visualizations to help round out my analysis.  <a href="Bellabeat R Notebook.pdf">Here</a> is my R analysis.</p>
-            <h4>Summary</h4>
-            <p>I focused on sleep and how the data collected affected that. It it is recommended for adult women to get 7-9 hours of sleep. Of the 413 days that were logged, only 46% were a full recommended night's sleep. My original hypothesis was proven wrong, that active minutes had a correlation to sleep time. In fact, it was sedentary time that had a negative correlation with sleep. So, in order to increase sleep time, Bellabeat should focus on decreasing sedementary times.</p>
-            <p>In order to so, Bellabeat should focus on suggesting walks for users, it would help increase days that meet daily step goal, which is only about 41% of the days. The best times to blast a notice are between 5AM-7AM (excluding normal sleeping hours). These are the hours with the highest logged sedementary time. Another time would be from 6-8PM (after work) which is the most popular time to excercise. Tuesday-Thursday are the days with the highest sedementary times, so midweek would be another good time to spread reminders to users to get moving.</p>
+        <div>
+            <a id="Prepare" onclick="myfunction3()" ondblclick="myfunc3()"><h2>Prepare</h2></a>
+                <div id="Panel3">
+                    <p class="p1">*For this case study, Sršen has suggested that we use the ‘FitBit Fitness Tracker Data’ available through Kaggle.*</p>
+                    <h4>Data Integrity:</h4>
+                    <p>This dataset was posted by user Möbius, who is competitions master and is a trusted user. Kaggle has also rated this dataset a 10 for usability, and this information is all public domain.</p>
+                    <p>‘FitBit Fitness Tracker Data’ is a dataset containing health information for 30 users over a 30 day period. It includes information about calories burned, sleep hours, weight loss, etc. While it provides great information for the subject we are looking for, it is a very small sample size. However according to the Central Limit Theorem, 30 as a minimum is acceptable to represent the larger population. Bellabeat is specifically marketed for women, and this data does not specify gender or age, nor is there any information about water intake. So it is a more general sample of health tech users.</p>
+                </div>
         </div>
         <div>
-            <a id="Share"><h2>Share</h2></a>
+            <a id="Process" onclick="myfunction4()" ondblclick="myfunc4()"><h2>Process</h2></a>
+               <div id="Panel4">
+                <h4>General ChangeLog</h4>
+                <p>This was cleaned in Google Sheets</p>
+                <p>I've attached a more detailed ChangeLog <a link href="Cleaning.html">here</a></p>
+                <h4>Spreadsheet Cleaning</h4>
+                <ol>
+                    <li>Datasets being used and aggregated: "dailyActivity_merged.csv", "sleepDay_merged.csv", "hourlySteps_merged.csv", "hourlyIntensities_merged.csv", and "hourlyCalories_merged.csv".</li>
+                    <li>Used filters and sorting to omit and negligible columns.</li>
+                    <li>All three hourly files were aggregated into one "hourly" file.</li>
+                    <ul>
+                        <li>*Had issues aggregating Daily Activity info because it had two search keys, the id and the date.</li>
+                    </ul>
+                </ol>
+                <h4>SQL Cleaning</h4>
+                <div class="container">
+                    <ol>
+                        <li>Uploaded sepearte daily datasets, "dailyActiviy_merged" and "sleepDay_merged"</li>
+                        <li>Using joins, aggregated those two data sets into one "daily" dataset</li>
+                        <li>Uploaded already combined "hourly" dataset</li>
+                    </ol>
+                    2.<img src="DailyJoin.png" alt="Screenshot of SQL Query">
+                </div>
+            </div>
         </div>
         <div>
-            <a id="Act"><h2>Act</h2></a>
+            <a id="Analyze" onclick="myfunction5()" ondblclick="myfunc5()"><h2>Analyze</h2></a>
+            <div id="Panel5">
+                <h4>What Makes a Healthy/Happy User?</h4>
+                <p>After some research, the statistics deemed ideal for adult women are:</p>
+                <ul>
+                    <li>Recommended to get between 7-9 hours of sleep a night</li>
+                    <li>Recommended to get around 10,000 steps a day</li>
+                    <li>Recommended to burn around 2,000 calories a day</li>
+                </ul>
+                <p>To begin my analysis I began using SQL. I wanted to see how often these goals were beat. There were 940 unique days logged for the 30 users. Of those days, 61% (571 days) beat the calorie goal, and only 32% (303 days) bat the step goal. Important distinction, for the sleep data, there were only 24 users that submitted data, and not every night was logged. There are 413 unique nights of sleep data, of those 46% (191 days) beat the sleep goal. Based on the data that I have, I'm going to use R for visualizations to help round out my analysis. Click <a href="Bellabeat R Notebook.pdf">here</a> is my R analysis.</p>
+                <h4>Summary</h4>
+                <p>I focused on sleep and how the data collected affected that. Of the 413 days that were logged, only 46% were a full recommended night's sleep. My original hypothesis was proven wrong, that active minutes had a correlation to sleep time. In fact, it was sedentary time that had a negative correlation with sleep. So the more time spent sedentary, the less sleep users got. Excluding normal sleeping hours, 5AM-8AM had the lowest amount of activity logged. Friday, Tuesday, and Thursday have the lowest average sleep hours, overlapping slighlty with the days with the highest average sedentary days, Tuesday, Wednesday, and Thursday.</p>
+                <div>
+                    <img src="SedVsSleep.png">
+                    <img src="SedVsWeekday.png">
+                </div>
+            </div>
+        </div>
+        <div>
+            <a id="Share" onclick="myfunction6()" ondblclick="myfunc6()"><h2>Share</h2></a>
+            <div id="Panel6">
+                <p>This website serves two purposes as my visualization. I analyzed all the data, and I also coded this website to present all the skills I have learned from my Google Career Certificate and coding courses taken through University of Michigan.</p>
+            </div>
+        </div>
+        <div>
+            <a id="Act" onclick="myfunction7()" ondblclick="myfunc7()"><h2>Act</h2></a>
+            <div id="Panel7">
+                <p>In order to increase sleep time, Bellabeat should focus on decreasing sedementary times. To do so, Bellabeat should focus on suggesting walks for users. This would help increase days that meet daily step goal, which is only about 32% of the days. The best times to blast a notice are between 5AM-7AM (excluding normal sleeping hours). These are the hours with the highest logged sedementary time. Another time would be from 6-8PM (after work) which is the most popular time to excercise. Tuesday-Thursday are the days with the highest sedementary times, so midweek would be another good time to spread reminders to users to get moving.</p>
+            </div>
         </div>
     </body>
