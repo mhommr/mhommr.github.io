@@ -2,146 +2,57 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    color: #fc8c76;
+    margin: 2%;
+    border: 2%;
 }
 
-h3 {
-    text-align: center;
+img {
+    width: 25%;
+    padding: 2%;
+    margin: 2%;
 }
 
-#subtitle {
-    display: block;
-    text-align: center;
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    margin: 2%; 
+}
+
+#intro h2 {
+    margin: 0;
+    padding:0;
 }
 
 div {
     margin: 2%;
-    padding: 2%;
-    border: #fc8c76;
-    border-style: solid;
-}
-
-h2 {
-    color: #fc9160;
-    text-align: center;
-}
-
-h4 {
-    color: #fc9160;
-}
-
-#Nav {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    list-style: none;
-}
-
-/*#Nav li {
-    display: inline-block;
-    text-align: center;
-    padding: 1%;
-    width: 12%;
-}*/
-
-#Nav a {
-    text-decoration: none;
-    color: #fc8c76;
-}
-
-#Nav li:hover {
-    background-color: #fc8c76;
-    color: #ffffff;
-}
-
-#Nav a:hover {
-    background-color: #fc8c76;
-    color: #ffffff;
-}
-
-#Panel {
-    display: none;
-    align-items: center;
-}
-
-#Panel2 {
-    display: none;
-}
-
-#Panel3 {
-    display: none;
-}
-
-#Panel4 {
-    display: none;
-}
-
-#Panel5 {
-    display: none;
-}
-
-#Panel6 {
-    display: none;
-}
-
-#Panel7 {
-    display: none;
-}
-
-.Panels {
-    display: none;
-}
-
-#Summary img {
-    display: inline;
-    width: 25%;
-    padding: 1px;
-}
-
-.paragraph {
-    width: 73%;
-    display: inline-block;
-    text-align: justify;
-    align-self: center;
-}
-
-.p1 {
-    text-align: center;
-}
-
-.ol_inner {
-    list-style-type: lower-alpha;
-}
-
-.container img {
-    width: 25%;
-}
-
-.container ol {
-    width: 70%;
+    border: 2%;
 }
 
 .container {
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
-p a {
-    text-decoration: none;
-    color: #fc8c76;
+.container h2 {
+    margin: 2%;
+    border: 2%;
 }
 
-#Analyze div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container p {
+    font-size: large;
+    margin: 2%;
+    border: 2%;
 }
 
-#Analyze img {
-    width: 30%;
+.left {
+    width: 70%;
+    margin-right: 30%;
 }
 
-.pic {
-    width:40%;
+.right {
+    width: 70%;
+    margin-left: 30%;
 }
