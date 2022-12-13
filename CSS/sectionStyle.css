@@ -81,15 +81,19 @@ button {
     border: none;
 }
 
-/*begin style for gallery*/
+.special {
+    width: 40%;
+}
+
+/*begin style for gallery
 div>img {
     display: inline-block;
     width: 5%;
     border-radius: 50%;
-}
+}*/
 
 
-@media screen and (min-width:576px){
+@media screen and (min-width:640px){
     button {
         display: none;
     }
@@ -131,9 +135,8 @@ div>img {
 
     nav li li a:hover{background:#bdc3c7;background:#FAFBFB}
 
-    /*begin gallery style*/
-    img {
-        width: 20%;
+    #clearNav {
+        margin-bottom: 6%;
     }
 }
 
