@@ -5,28 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>Michael Hommrich</title>
         <link rel="stylesheet" href="CSS/sectionStyle.css">
+        <!--<link rel="stylesheet" href="Lightbox/lightbox.min.css">-->
         <script src="JS/js.js"></script>
         <script src="https://kit.fontawesome.com/c8c0ccdea8.js" crossorigin="anonymous"></script>
+        <!--<script>
+            lightbox.options ({
+              'alwaysShowNavOnTouchDevices': false
+            })
+        </script>-->
     </head>
     <body>
         <header>
-            <img src="Images/headshotCenter.jpg" alt="headshot">
+            <img src="img/headshotCenter.jpg" alt="headshot">
             <h1>Michael Hommrich</h1>
             <button id="navIcon" onclick="expandNav()"><i class="fa-solid fa-bars"></i></button>
         </header>
-        <div class="container left">
-            <h2>Experience</h2>
-            <p><br>Google Career Certificate / IT Support | In progress | hosted on Coursera <br> 
-                Google Career Certificate / Data Analytics | Completed June 2022 | hosted on Coursera <br>
-                Basics of Web Design & Coding Specialization | In progress | hosted on Coursera through University of Michigan</p>
-        </div>
-        <div>
-            <h2>Most Recent Project</h2>
-            <p><br>This site doubles as my professional portfolio as well as my Captstone project for "Web Design for Everybody: Basics of Web Development &amp; Coding Specialization" offered by University of Michigan through Coursera.</p>
-        </div>
-        <div>
-            <h2>Current Project</h2>
-            <p><br></p>
+        <div id="clearNav">
+            <h2>My Specializations</h2>
+            <h3>What's a Specialization?</h3>
+            <p>A specialization is a certification made up of a series of individual courses. A course is anywhere from 3-6 weeks worth of lecture videos, hands-on assignments, coding projects, peer-reviewed assignments, and weekly graded quizes.</p>
+            <h3>My Complete Specializations</h3> 
+                <p>Google Career Certificate / Data Analytics | Completed June 2022 | hosted on Coursera<br>
+                Basics of Web Development & Coding Specialization | Completed Aug 2022 | hosted on Coursera through University of Michigan</p>
+            <a href="googleDataCert.html"><img class="special" alt="Google Data Analysis Certification" src="img/dataAnalyticsCert.jpg"></a>
+            <a href="webDesignCert.html"><img class="special" alt="Web Design Certification" src="img/webDesignCert.jpg"></a>
+            <h3>My Current Specializations</h3>
+                <p>IBM Full Stack Software Developer Professional Certificate<br>
+                Search Engine Optimization (SEO) Specialization<br>
+                Meta Social Media Marketing Professional Certificate</p>
+            <h3>Individual Courses</h3>
+                <p>Crash Course on Python<br>
+                </p>
         </div>
         <footer id="header">
             <nav>
@@ -47,9 +56,10 @@
                         <a href="relevantLinks.html">Relevant Links</a>
                     </li>
                     <li>
-                        <a href="newGallery.html">Photo Gallery</a>
+                        <a href="gallery.html">Photo Gallery</a>
                     </li>
                 </ul>
             </nav>
         </footer>
+        <script src="Lightbox/lightbox-plus-jquery.min.js"></script>
     </body>
