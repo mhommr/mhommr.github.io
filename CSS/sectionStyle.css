@@ -142,15 +142,18 @@ div>img {
     .unordered li {
         display: inline;
         padding: 3%;
+        text-decoration:none;
     }
 
     #skills li {
         display:inline-block;
         width: 16%;
+        text-decoration:none;
     }
 
     ol li {
         display: block;
+        text-decoration:none;
     }
 
     /*begin gallery style
