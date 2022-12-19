@@ -42,7 +42,7 @@ div h2 {
     font-size: 2em;
 }
 
-ul {
+#header>ul {
     text-align: center;
     padding-inline-start: 0;
     background: #4e6766;
@@ -71,7 +71,7 @@ ul {
     color: #e2dadb;
 }
 
-li:hover, a:hover {
+nav li:hover, a:hover {
     background: #1f1a38;
 }
 
@@ -110,7 +110,7 @@ div>img {
 
     #header:after{content:"";clear:both;display:block;}
 
-    nav{display: block; width:100vw; align-items: center;}
+    nav{display: block; width:100vw; align-items: center; text-transform: uppercase; text-align: center;}
 
     nav>ul{display: flex; justify-content: space-around;padding: inherit; align-items: center;height: inherit;}
 
@@ -129,14 +129,40 @@ div>img {
 
     nav li:hover ul{display:inline}
 
-    nav li li{float:none}
+    nav li li{float:none; text-transform:uppercase}
 
-    nav li li a{float:none;color:#333;display:block;padding:8px 10px;border-radius:3px;font-size:13px}
+    nav li li a{float:none;color:#333;display:block;padding:8px 10px;border-radius:3px;font-size:15px;text-transform: uppercase;}
 
     nav li li a:hover{background:#bdc3c7;background:#FAFBFB}
 
-    #clearNav {
+    .clearNav {
         margin-bottom: 10%;
+    }
+
+    .unordered li {
+        display: inline;
+        padding: 3%;
+    }
+
+    #skills li {
+        display:inline-block;
+        width: 16%;
+    }
+
+    ol li {
+        display: block;
+    }
+
+    /*begin gallery style
+    img {
+        width: 20%;
+    }*/
+
+    #header>ul {
+        text-align: center;
+        padding-inline-start: 0;
+        background: #4e6766;
+        text-transform:uppercase;
     }
 }
 
