@@ -93,7 +93,7 @@ div>img {
 }*/
 
 
-@media screen and (min-width:640px){
+@media screen and (min-width:751px){
     button {
         display: none;
     }
@@ -135,7 +135,7 @@ div>img {
 
     nav li li a:hover{background:#bdc3c7;background:#FAFBFB}
 
-    .clearNav {
+    div {
         margin-bottom: 10%;
     }
 
@@ -146,8 +146,8 @@ div>img {
     }
 
     #skills li {
-        display:inline-block;
-        width: 16%;
+        display:block;
+        height:7%;
         text-decoration:none;
     }
 
@@ -168,4 +168,3 @@ div>img {
         text-transform:uppercase;
     }
 }
-
