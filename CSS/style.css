@@ -1,0 +1,113 @@
+body {
+    background: #e2dadb;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1f1a38;
+}
+
+img {
+    width: 25%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 50%;
+}
+ul {
+    text-align: center;
+    padding-inline-start: 0;
+    background: #4e6766;
+}
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1%;
+    margin: 1%; 
+    color: #1f1a38;
+}
+
+#header li {
+    display: flex;
+    padding: 1%;
+    border: 1%;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: #4e6766;
+}
+
+li:hover, a:hover {
+    background: #1f1a38;
+}
+
+#header {
+    display: none;
+    align-items: center;
+    margin: auto;
+}
+
+#header a {
+    text-decoration: none;
+    color: #e2dadb;
+}
+
+
+
+@media screen and (min-width:640px){    
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+        border: 2%;
+        height: 80vh;
+    }
+
+    button {
+        display: none;
+    }
+
+
+    *, *:before, *:after {-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding: 0.5rem}
+
+    body{background:#e2dadb;font-family:sans-serif;text-transform:uppercase;font-size:16px;color:#fff}
+
+    a{text-decoration:none;color:#e2dadb}
+
+    #header{ background:#4e6766;position: fixed;bottom:0;left:0;display: flex;}
+
+    #header:after{content:"";clear:both;display:block;}
+
+    nav{display: block; width:100vw; align-items: center;}
+
+    nav>ul{display: flex; justify-content: space-around;padding: inherit; align-items: center;height: inherit;}
+
+    nav li{list-style:none; align-items: center;}
+
+    nav li a{padding:inherit;}
+
+    nav li:hover {
+        background: #1f1a38;
+    }
+
+
+    nav li a:hover{background:#1f1a38;}
+
+    nav li ul{display:none}
+
+    nav li:hover ul{display:inline}
+
+    nav li li{float:none}
+
+    nav li li a{float:none;color:#333;display:block;padding:8px 10px;border-radius:3px;font-size:13px}
+
+    nav li li a:hover{background:#bdc3c7;background:#FAFBFB}
+}
