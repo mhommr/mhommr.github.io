@@ -93,7 +93,7 @@ div>img {
 }*/
 
 
-@media screen and (min-width:320px){
+@media screen and (min-width:576px){
     button {
         display: none;
     }
