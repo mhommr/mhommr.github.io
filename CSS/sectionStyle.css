@@ -40,6 +40,7 @@ div {
 
 div h2 {
     font-size: 2em;
+    text-align: center;
 }
 
 #header>ul {
@@ -91,6 +92,14 @@ div>img {
     width: 5%;
     border-radius: 50%;
 }*/
+
+#skills li {
+    list-style-type: none;
+    display: block;
+    height: auto;
+    padding: 5%;
+    font-size: large;
+}
 
 
 @media screen and (min-width:576px){
@@ -146,8 +155,9 @@ div>img {
     }
 
     #skills li {
-        display:block;
+        display:inline-block;
         height:7%;
+        width: auto;
         text-decoration:none;
     }
 
@@ -166,5 +176,13 @@ div>img {
         padding-inline-start: 0;
         background: #4e6766;
         text-transform:uppercase;
+    }
+
+    #resume {
+        width: 50%;
+    }
+
+    #link {
+        display: block;
     }
 }

@@ -6,7 +6,7 @@
         <title>Michael Hommrich</title>
         <link rel="stylesheet" href="CSS/galleryStyle.css">
         <script src="https://kit.fontawesome.com/c8c0ccdea8.js" crossorigin="anonymous"></script>
-        <script src="JS/js.js"></script>
+        <script src="JS/draft2.js"></script>
     </head>
     <body>
        <header>
@@ -14,18 +14,28 @@
             <H1>Michael Hommrich</H1>
             <button id="navIcon" onclick="expandNav()"><i class="fa-solid fa-bars"></i></button>
         </header>
+        <div id="info">
+            <h1>A Little About Me</h1>
+            <p>This is mainly to show off a little bit of JavaScript. I originally had it using onmouseover and onmouseout, however I am trying hard to maintain responsive design across devices, so I changed it onclick and ondblclick in order to keep this section functional on mobile device.</p>
+            <br/>
+            <p>Click an icon to view a larger image with a short caption, double click the same icon when done, and repeat with next.</p>
+        </div> 
+        </div>
         <div id="hidden">
             <div id="active">
-                <p id="text">Hover over image to see large version</p>
+                <p id="text">
+                    Click an image to see larger version 
+                    <br/>Double click icon to minimize
+                </p>
             </div>
             <div>
                 <p id="alt"></p>
             </div>
             <div id="container">
-                <img src="Images/headshotCenter.jpg" alt="My headshot" class="gall" onmouseover="getBig(this)" onmouseout="getSmall()">
-                <img src="Images/xmasCard.jpg" alt="My family" class="gall" onmouseover="getBig(this)" onmouseout="getSmall()">
-                <img src="Images/squareDancePic.jpg" alt="My favorite dance picture" class="gall" onmouseover="getBig(this)" onmouseout="getSmall()">
-                <img src="Images/MissaBrev.jpg" alt="One of my favorite performances, I'm on the far right lifting my castmate" class="gall" onmouseover="getBig(this)" onmouseout="getSmall()">
+                <img src="Images/headshotCenter.jpg" alt="A closer look at me" class="gall" onclick="getBig(this)" ondblclick="getSmall()">
+                <img src="Images/xmasCard.jpg" alt="My loving partner, and our incredible dog, Chewie" class="gall" onclick="getBig(this)" ondblclick="getSmall()">
+                <img src="Images/squareDancePic.jpg" alt="I used to dance professionally, this is one of my favorite pics of that time of my life" class="gall" onclick="getBig(this)" ondblclick="getSmall()">
+                <img src="Images/MissaBrev.jpg" alt="This was one of the most meaningful performances I was ever a part of. I am on the far right of the picture lifting my castmate" class="gall" onclick="getBig(this)" ondblclick="getSmall()">
             </div>
         </div>
         <footer id="header">

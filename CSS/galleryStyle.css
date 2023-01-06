@@ -79,10 +79,29 @@ div>img {
     border-radius: 50%;
 }
 
+#info {
+    align-items: center;
+}
+
 #container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#active {
+    width:75vw;
+    height: 50vh;
+    border:5px solid #1f1a38;
+    margin:0 auto;
+    background-color: #4e6766;
+    background-image: url('') 50%;
+    background-repeat: no-repeat;
+    color:#1f1a38;
+    text-align: center;
+    background-size: 100%;
+    margin-bottom:25px;
+    font-size: 150%;
 }
 
 
@@ -135,6 +154,22 @@ div>img {
 
     #active {
         line-height:auto;
+        width: 30vw;
+        height: 30vw;
+        border:5px solid #1f1a38;
+        margin:0 auto;
+        background-color: #4e6766;
+        background-image: url('') 50%;
+        background-repeat: no-repeat;
+        color:#1f1a38;
+        text-align: center;
+        background-size: 100%;
+        margin-bottom:25px;
+        font-size: 150%;
+    }
+
+    #activeBig {
+        line-height:auto;
         width: 40vw;
         height: 40vw;
         border:5px solid #1f1a38;
@@ -156,6 +191,15 @@ div>img {
     #alt {
         text-align: center;
         font-size: 150%;
+
+    }
+
+    #info {
+        text-align: center;
+    }
+
+    #info p {
+        font-size: large;
     }
 
 }

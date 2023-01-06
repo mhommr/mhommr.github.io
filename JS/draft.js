@@ -13,6 +13,7 @@ function getBig(image) {
         document.getElementById('text').style.display = 'inline-block';
     }
     document.getElementById("active").style.backgroundImage = "url("+image.src+")";
+    console.log(image.src);
     document.getElementById("active").style.backgroundColor = "#000000";
     document.getElementById("alt").innerHTML = image.alt;
 }

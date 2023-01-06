@@ -58,7 +58,17 @@ li:hover, a:hover {
     color: #e2dadb;
 }
 
+#clear {
+    margin-bottom: 10%;
+    color: #1f1a38;
+    text-align: center;
+    text-transform: uppercase;
+}
 
+#clear a {
+    text-decoration: none;
+    color: #4e6766;
+}
 
 @media screen and (min-width:576px){    
     header {
@@ -68,7 +78,7 @@ li:hover, a:hover {
         justify-content: center;
         margin: 2%;
         border: 2%;
-        height: 80vh;
+        height: 60vh;
     }
 
     button {
@@ -110,4 +120,14 @@ li:hover, a:hover {
     nav li li a{float:none;color:#333;display:block;padding:8px 10px;border-radius:3px;font-size:13px}
 
     nav li li a:hover{background:#bdc3c7;background:#FAFBFB}
+
+    #clear {
+        margin-bottom: 10%;
+        color: #1f1a38;
+        text-align: center;
+    }
+
+    #clear a {
+        color:#4e6766;
+    }
 }
