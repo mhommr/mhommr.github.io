@@ -2,6 +2,7 @@
 body {
     background-color: #e2dadb;
     color: #1f1a38;
+    text-align: center;
 }
 
 header {
@@ -89,12 +90,28 @@ div>img {
     align-items: center;
 }
 
-#active {
-    width:75vw;
-    height: 50vh;
+.activeClass {
+    width: 50vw;
+    height: 30vh;
     border:5px solid #1f1a38;
     margin:0 auto;
     background-color: #4e6766;
+    background-image: url('') 50%;
+    background-repeat: no-repeat;
+    color:#1f1a38;
+    text-align: center;
+    background-size: 100%;
+    margin-bottom:25px;
+    font-size: 150%;
+}
+
+.activeClassBig {
+    line-height:auto;
+    width: 50vw;
+    height: 30vh;
+    border:5px solid #1f1a38;
+    margin:0 auto;
+    background-color: #000000;
     background-image: url('') 50%;
     background-repeat: no-repeat;
     color:#1f1a38;
@@ -148,11 +165,11 @@ div>img {
     nav li li a:hover{background:#bdc3c7;background:#FAFBFB}
 
     /*begin gallery style*/
-    img {
+    #container img {
         width: 10%;
     }
 
-    #active {
+    .activeClass {
         line-height:auto;
         width: 30vw;
         height: 30vw;
@@ -168,7 +185,7 @@ div>img {
         font-size: 150%;
     }
 
-    #activeBig {
+    .activeClassBig {
         line-height:auto;
         width: 40vw;
         height: 40vw;
