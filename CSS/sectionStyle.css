@@ -185,4 +185,20 @@ div>img {
     #link {
         display: block;
     }
+
+    #github {
+        margin: auto;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        width: 15%;
+        background-color: #4e6766;
+        border: 1px solid #1f1a38;
+    }
+    #github > a {
+        color: #1f1a38
+    }
+    #github > a:hover {
+        color:#4e6766
+    }
+
 }
